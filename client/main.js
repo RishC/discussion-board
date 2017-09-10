@@ -2,11 +2,6 @@ import { Meteor } from 'meteor/meteor';
 import { Template } from 'meteor/templating';
 import { Posts } from '../imports/api/posts.js';
 
- if (Meteor.isClient){
-
-  console.log("I'm running client code");
-  
-}
 // register events
 Template.register.events({
     'submit form': function(event){
