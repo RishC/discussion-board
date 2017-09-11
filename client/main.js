@@ -12,7 +12,7 @@ Template.register.events({
             email: email,
             password: password
         });
-        Router.go('/');
+        Router.go('/forum');
     }
 });
 
@@ -23,7 +23,7 @@ Template.login.events({
         var email = $('[name=email]').val();
         var password = $('[name=password]').val();
         Meteor.loginWithPassword(email, password);
-        Router.go('/');
+        Router.go('/forum');
     }
 });
 
