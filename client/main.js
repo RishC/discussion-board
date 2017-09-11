@@ -87,5 +87,5 @@ Router.configure({
 });
 
 Router.route('/', function () {
-  this.redirect('/forum');
+  this.redirect('/login');
 });
